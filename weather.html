@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/weather.css">
+    
     <title>Weather</title>
 </head>
 <body>
@@ -39,7 +40,7 @@
         const searchbtn=document.querySelector(".search button");
         const weatherIcon=document.querySelector(".weather-icon");
 
-        const apiKey="715b530fe742f37f3d6fb08f95f2f553";
+        const apiKey="";
         const url="https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
         async function checkWeather(city){
            const response = await fetch(url+city+`&appid=${apiKey}`);
